@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@everapi/freecurrencyapi-js": "^1.0.1",
+    "express": "^4.18.2"
+  }
+}

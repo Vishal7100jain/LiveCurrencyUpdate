@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaiton</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    color: black;
+}
+
+.main {
+    height: 80vh;
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #AAC8A7;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+
+.Documentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+h3 {
+    margin: 0px;
+    padding: 8px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.Documentation i {
+    font-size: x-large;
+    border: 1px solid #fff;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+
+#Title {
+    display: inline-block;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    padding: 0 5px;
+}
+
+.details>span {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+p {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Phone view */
+@media (min-width:300px) and (max-width:500px) {
+    .main {
+        width: 100vw;
+        height: 100vh;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    .details{
+        height: 480px;
+        overflow-y: scroll;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="Documentation">
+            <i class="fa-solid fa-coins"></i>
+            <div id="Title">
+                <h3>Countries Currency Codes</h3>
+            </div>
+        </div>
+        <div class="details">
+            <span>
+                <span id="Country-name">Australian Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">AUD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Bulgarian Lev</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">BGN</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Brazilian Real</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">BRL</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Canadian Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">CAD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Swiss Franc</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">CHF</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Chinese Yuan</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">CNY</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Czech Republic Koruna</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">CZK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Danish Krone</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">DKK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Euro</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">EUR</p>
+            </span>
+
+            <span>
+                <span id="Country-name">British Pound Sterling</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">GBP</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Hong Kong Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">HKD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Croatian Kuna</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">HRK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Hungarian Forint</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">HUF</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Indonesian Rupiah</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">IDR</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Israeli New Sheqel</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">ILS</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Indian Rupee</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">INR</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Icelandic Króna</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">ISK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Japanese Yen</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">JPY</p>
+            </span>
+
+            <span>
+                <span id="Country-name">South Korean Won</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">KRW</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Mexican Peso</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">MXN</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Malaysian Ringgit</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">MYR</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Norwegian Krone</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">NOK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">New Zealand Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">NZD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Philippine Peso</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">PHP</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Polish Zloty</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">PLN</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Romanian Leu</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">RON</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Russian Ruble</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">RUB</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Swedish Krona</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">SEK</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Singapore Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">SGD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Thai Baht</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">THB</p>
+            </span>
+
+            <span>
+                <span id="Country-name">Turkish Lira</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">TRY</p>
+            </span>
+
+            <span>
+                <span id="Country-name">US Dollar</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">USD</p>
+            </span>
+
+            <span>
+                <span id="Country-name">South African Rand</span>
+                <i class="fa-solid fa-arrow-right"></i>
+                <p id="country-code">ZAR</p>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>

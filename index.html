@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Currency Update's</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Roboto:wght@300;400;900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div id="header">
+      <button id="documentation">
+        <a href="Documentation.html"><i class="fa-solid fa-book"></i></a>
+      </button>
+      <header>
+        <h4><b>Currency Update</b></h4>
+      </header>
+
+      <button type="button" id="Notification" class="btn btn-primary position-relative">
+        <i class="fa-solid fa-bell"></i>
+        <span
+          class="position-absolute top-8 left-30 start-100 translate-middle p-2 bg-danger border border-danger rounded-circle">
+        </span>
+      </button>
+    </div>
+    <div class="exchange">
+      <div class="choise">
+        <!-- jees ko kr na hai exchange like 1 usd -->
+        <div id="to">
+          <div class="img">
+            <img height="35" src="" id="country-Flags-To" alt="">
+            <select name="to" id="to">
+              <!-- Non -->
+              <option value="Non">---</option>
+              <!-- Australian Dollar -->
+              <div class="img"></div>
+              <option value="AUD">AUD</option>
+              <!-- Bulgarian Lev -->
+              <option value="BGN">BGN</option>
+              <!-- Brazilian Real -->
+              <option value="BRL">BRL</option>
+              <!-- Canadian Dollar -->
+              <option value="CAD">CAD</option>
+              <!-- Swiss Franc -->
+              <option value="CHF">CHF</option>
+              <!-- Chinese Yuan -->
+              <option value="CNY">CNY</option>
+              <!-- Czech Republic Koruna -->
+              <option value="CZK">CZK</option>
+              <!-- Danish Krone -->
+              <option value="DKK">DKK</option>
+              <!-- Euro -->
+              <option value="EUR">EUR</option>
+              <!-- British Pound Sterling -->
+              <option value="GBP">GBP</option>
+              <!-- Hong Kong Dollar -->
+              <option value="HKD">HKD</option>
+              <!-- Croatian Kuna -->
+              <option value="HRK">HRK</option>
+              <!-- Hungarian Forint -->
+              <option value="HUF">HUF</option>
+              <!-- Indonesian Rupiah -->
+              <option value="IDR">IDR</option>
+              <!-- Israeli New Sheqel -->
+              <option value="ILS">ILS</option>
+              <!-- Indian Rupee -->
+              <option value="INR">INR</option>
+              <!-- Icelandic Króna -->
+              <option value="ISK">ISK</option>
+              <!-- Japanese Yen -->
+              <option value="JPY">JPY</option>
+              <!-- South Korean Won -->
+              <option value="KRW">KRW</option>
+              <!-- Mexican Peso -->
+              <option value="MXN">MXN</option>
+              <!-- Malaysian Ringgit -->
+              <option value="MYR">MYR</option>
+              <!-- Norwegian Krone -->
+              <option value="NOK">NOK</option>
+              <!-- New Zealand Dollar -->
+              <option value="NZD">NZD</option>
+              <!-- Philippine Peso -->
+              <option value="PHP">PHP</option>
+              <!-- Polish Zloty -->
+              <option value="PLN">PLN</option>
+              <!-- Romanian Leu -->
+              <option value="RON">RON</option>
+              <!-- Russian Ruble -->
+              <option value="RUB">RUB</option>
+              <!-- Swedish Krona -->
+              <option value="SEK">SEK</option>
+              <!-- Singapore Dollar -->
+              <option value="SGD">SGD</option>
+              <!-- Thai Baht -->
+              <option value="THB">THB</option>
+              <!-- Turkish Lira -->
+              <option value="TRY">TRY</option>
+              <!-- US Dollar -->
+              <option value="USD">USD</option>
+              <!-- South African Rand -->
+              <option value="ZAR">ZAR</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Reverse Button -->
+        <div class="reverse-Btn">
+          <button id="reverse"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+
+        <!-- jees ko krva na hai exchange like 1 usd = 81.00 inr -->
+        <div id="from">
+          <div class="img">
+            <img height="35" src="" id="country-Flags-From" alt="">
+
+            <select name="From" id="From">
+              <div class="img">
+                <!-- Non -->
+                <option value="Non">---</option>
+              </div>
+              <!-- Australian Dollar -->
+              <option value="AUD">AUD</option>
+              <!-- Bulgarian Lev -->
+              <option value="BGN">BGN</option>
+              <!-- Brazilian Real -->
+              <option value="BRL">BRL</option>
+              <!-- Canadian Dollar -->
+              <option value="CAD">CAD</option>
+              <!-- Swiss Franc -->
+              <option value="CHF">CHF</option>
+              <!-- Chinese Yuan -->
+              <option value="CNY">CNY</option>
+              <!-- Czech Republic Koruna -->
+              <option value="CZK">CZK</option>
+              <!-- Danish Krone -->
+              <option value="DKK">DKK</option>
+              <!-- Euro -->
+              <option value="EUR">EUR</option>
+              <!-- British Pound Sterling -->
+              <option value="GBP">GBP</option>
+              <!-- Hong Kong Dollar -->
+              <option value="HKD">HKD</option>
+              <!-- Croatian Kuna -->
+              <option value="HRK">HRK</option>
+              <!-- Hungarian Forint -->
+              <option value="HUF">HUF</option>
+              <!-- Indonesian Rupiah -->
+              <option value="IDR">IDR</option>
+              <!-- Israeli New Sheqel -->
+              <option value="ILS">ILS</option>
+              <!-- Indian Rupee -->
+              <option value="INR">INR</option>
+              <!-- Icelandic Króna -->
+              <option value="ISK">ISK</option>
+              <!-- Japanese Yen -->
+              <option value="JPY">JPY</option>
+              <!-- South Korean Won -->
+              <option value="KRW">KRW</option>
+              <!-- Mexican Peso -->
+              <option value="MXN">MXN</option>
+              <!-- Malaysian Ringgit -->
+              <option value="MYR">MYR</option>
+              <!-- Norwegian Krone -->
+              <option value="NOK">NOK</option>
+              <!-- New Zealand Dollar -->
+              <option value="NZD">NZD</option>
+              <!-- Philippine Peso -->
+              <option value="PHP">PHP</option>
+              <!-- Polish Zloty -->
+              <option value="PLN">PLN</option>
+              <!-- Romanian Leu -->
+              <option value="RON">RON</option>
+              <!-- Russian Ruble -->
+              <option value="RUB">RUB</option>
+              <!-- Swedish Krona -->
+              <option value="SEK">SEK</option>
+              <!-- Singapore Dollar -->
+              <option value="SGD">SGD</option>
+              <!-- Thai Baht -->
+              <option value="THB">THB</option>
+              <!-- Turkish Lira -->
+              <option value="TRY">TRY</option>
+              <!-- US Dollar -->
+              <option value="USD">USD</option>
+              <!-- South African Rand -->
+              <option value="ZAR">ZAR</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="result">
+        <span>1 <p id="country-code-to-convert">INR</p></span>
+        <i class="fa-solid fa-equals"></i>
+        <span>
+          <span id="Main-Converted-value">81.90231</span>
+          <p id="country-code-from-convert">USD</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="allConvertor">
+      <div class="img" id="img">
+        <img height="35" src="" id="country-Flags-allLive" alt="">
+        <select name="CodeAllLive" id="CodeAllLive">
+          <!-- Australian Dollar -->
+          <option value="AUD">AUD</option>
+          <!-- Bulgarian Lev -->
+          <option value="BGN">BGN</option>
+          <!-- Brazilian Real -->
+          <option value="BRL">BRL</option>
+          <!-- Canadian Dollar -->
+          <option value="CAD">CAD</option>
+          <!-- Swiss Franc -->
+          <option value="CHF">CHF</option>
+          <!-- Chinese Yuan -->
+          <option value="CNY">CNY</option>
+          <!-- Czech Republic Koruna -->
+          <option value="CZK">CZK</option>
+          <!-- Danish Krone -->
+          <option value="DKK">DKK</option>
+          <!-- Euro -->
+          <option value="EUR">EUR</option>
+          <!-- British Pound Sterling -->
+          <option value="GBP">GBP</option>
+          <!-- Hong Kong Dollar -->
+          <option value="HKD">HKD</option>
+          <!-- Croatian Kuna -->
+          <option value="HRK">HRK</option>
+          <!-- Hungarian Forint -->
+          <option value="HUF">HUF</option>
+          <!-- Indonesian Rupiah -->
+          <option value="IDR">IDR</option>
+          <!-- Israeli New Sheqel -->
+          <option value="ILS">ILS</option>
+          <!-- Indian Rupee -->
+          <option value="INR">INR</option>
+          <!-- Icelandic Króna -->
+          <option value="ISK">ISK</option>
+          <!-- Japanese Yen -->
+          <option value="JPY">JPY</option>
+          <!-- South Korean Won -->
+          <option value="KRW">KRW</option>
+          <!-- Mexican Peso -->
+          <option value="MXN">MXN</option>
+          <!-- Malaysian Ringgit -->
+          <option value="MYR">MYR</option>
+          <!-- Norwegian Krone -->
+          <option value="NOK">NOK</option>
+          <!-- New Zealand Dollar -->
+          <option value="NZD">NZD</option>
+          <!-- Philippine Peso -->
+          <option value="PHP">PHP</option>
+          <!-- Polish Zloty -->
+          <option value="PLN">PLN</option>
+          <!-- Romanian Leu -->
+          <option value="RON">RON</option>
+          <!-- Russian Ruble -->
+          <option value="RUB">RUB</option>
+          <!-- Swedish Krona -->
+          <option value="SEK">SEK</option>
+          <!-- Singapore Dollar -->
+          <option value="SGD">SGD</option>
+          <!-- Thai Baht -->
+          <option value="THB">THB</option>
+          <!-- Turkish Lira -->
+          <option value="TRY">TRY</option>
+          <!-- US Dollar -->
+          <option value="USD">USD</option>
+          <!-- South African Rand -->
+          <option value="ZAR">ZAR</option>
+        </select>
+
+      </div>
+
+      <div id="all-Convertor-update">
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <span id="Converted-value"></span>
+            <p id="country-code-for-all">AUD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <span id="Converted-value"></span>
+            <p id="country-code-for-all">BGN</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">BRL</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" aljt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">CAD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">CHF</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">CNY</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">CZK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">DKK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">EUR</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">GBP</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">HKD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">HRK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">HUF</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">IDR</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">ILS</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">INR</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">ISK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">JPY</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">KRW</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">MXN</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">MYR</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">NOK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">NZD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">PHP</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">PLN</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">RON</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">RUB</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">SEK</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">SGD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">THB</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">TRY</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">USD</p>
+          </span>
+        </div>
+        <div id="allLive"><span>1 <p id="AllValuesCode">INR</p></span>
+          <i class="fa-solid fa-equals"></i>
+          <span>
+            <img src="" id="country-Flags-To" alt=""><span id="Converted-value"></span>
+            <p id="country-code-for-all">ZAR</p>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-success" role="alert" id="alert">
+      Stay up-to-date with live currency updates every second on our app!
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
