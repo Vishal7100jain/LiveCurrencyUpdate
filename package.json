@@ -3,5 +3,16 @@
   "dependencies": {
     "@everapi/freecurrencyapi-js": "^1.0.1",
     "express": "^4.18.2"
-  }
+  },
+  "name": "livecurrencyupdate",
+  "description": "Web app to check the live currency of your nation ( My Nation \"INDIA\")",
+  "version": "1.0.0",
+  "main": "Flags.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "vishal jain",
+  "license": "ISC"
 }
