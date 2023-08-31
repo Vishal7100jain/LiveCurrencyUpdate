@@ -2,6 +2,7 @@
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+  color: white !important;
 }
 
 .main::-webkit-scrollbar {
@@ -19,7 +20,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
@@ -40,13 +41,13 @@ body {
   height: 80vh;
   width: 300px;
   border: 1px solid rgb(0, 0, 0);
-  background-color: #AAC8A7;
+  background-color: #1B8366;
   border-radius: 5px;
   overflow-y: scroll;
 }
 
 #header {
-  color: black;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -62,13 +63,13 @@ body {
 }
 
 #documentation i {
-  color: #E3F2C1;
+  color: #57C478;
   font-size: xx-large;
   cursor: pointer;
 }
 
 #Notification i {
-  color: #E3F2C1;
+  color: #57C478;
   font-size: xx-large;
   cursor: pointer;
 }
@@ -90,13 +91,13 @@ img {
 }
 
 .img {
-  background-color: #F6FFDE;
+  background-color: #57C478;
   border-radius: 5px;
 }
 
 select {
-  border: 5px solid #F6FFDE;
-  background-color: #F6FFDE;
+  border: 5px solid #57C478;
+  background-color: #57C478;
   padding: 5px 2px;
   font-size: large;
   border-radius: 5px;
@@ -108,7 +109,8 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #E3F2C1;
+  background-color: #57C478;
+  color: black;
 }
 
 .result p {
@@ -124,8 +126,8 @@ select {
 #reverse {
   font-size: large;
   display: grid;
-  background-color: #E3F2C1;
-  border: 1px solid #E3F2C1;
+  background-color: #57C478;
+  border: 1px solid #57C478;
   color: black;
   cursor: pointer;
   border-radius: 50%;
@@ -138,6 +140,10 @@ select {
 
 #img {
   width: 120px;
+}
+
+#Main-Converted-value{
+  color: white;
 }
 
 #allLive {
@@ -163,12 +169,12 @@ select {
 
 #alertAnimation {
   transform: scale(1, 1);
-  transition: all .3s linear;
+  transition: all 0.3s linear;
   transform-origin: bottom;
 }
 
 /* Phone view */
-@media (min-width:300px) and (max-width:500px) {
+@media (min-width: 300px) and (max-width: 500px) {
   .main {
     width: 100vw;
     height: 100vh;
