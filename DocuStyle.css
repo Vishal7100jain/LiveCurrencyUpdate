@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-content: center;
     height: 100vh;
-    color: black;
+    color: white;
 }
 
 
@@ -11,7 +11,7 @@ body {
     height: 80vh;
     width: 300px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: #AAC8A7;
+    background-color: #1B8366;
     border-radius: 5px;
     overflow-y: auto;
 }
@@ -27,18 +27,19 @@ body {
 h3 {
     margin: 0px;
     padding: 8px;
-    color: white;
+    color: #ffdd00;
     font-weight: bolder;
     font-size: 20px;
 }
 
 .Documentation i {
     font-size: x-large;
-    border: 1px solid #fff;
+    border: 1px solid #aaa4a4;
     padding: 7px;
-    background-color: #fff;
+    background-color: #aaa4a4;
     border-radius: 50%;
     margin-top: 3px;
+    color: #ffdd00;
 }
 
 #Title {
