@@ -93,6 +93,7 @@ img {
 .img {
   background-color: #57C478;
   border-radius: 5px;
+  display: flex;
 }
 
 select {
